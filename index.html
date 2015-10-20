@@ -5,7 +5,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
-	<title>HumanForm - Formulário para pessoas reais</title>
+	<title>HumanForm</title>
 	<link rel="stylesheet" type="text/css" href="style/humanform.css">
 	<link rel="stylesheet" type="text/css" href="style/animate.css">
 	<link href='https://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
@@ -17,16 +17,17 @@
 		<p>Formulários para pessoas reais</p>
 	</header>
 	<section>
-		<h2>#01 - Standart</h2>
+		<h2>#01 - Padrão</h2>
 		<form role="form" class="human-form" id="humanform" data-toggle="validator" class="shake">
 			<div class="human-form-group">
 				<label for="name" class="human-form-label">Nome</label>
 				<input type="text" name="name" id="name" placeholder="Meu nome é Igor, qual é o seu?" class="human-form-input input-text" required>
+				<span id="human-name-return" class="human-return"></span>
 			</div>
 
 			<div class="human-form-group">
 				<label for="email" class="human-form-label">Email</label>
-				<input type="email" name="email" id="email" placeholder="Se precisar falar comigo, meu email é contato@igorprado.com.br" class="human-form-input input-email" required data-error="Por favor, preencha seu email">
+				<input type="email" name="email" id="email" placeholder="Fale comigo, meu email é contato@igorprado.com.br" class="human-form-input input-email" required data-error="Por favor, preencha seu email">
 				<div class="help-block with-errors"></div>
 			</div>
 

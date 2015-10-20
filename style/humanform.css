@@ -1,0 +1,133 @@
+html:before,html:after,body:before,body:after{
+    content:"";
+    background:#fefad5;
+    position:fixed;
+    display:block;
+    z-index:5;
+}
+
+/* ...and position them! */
+html:before{
+    height:30px;
+    left:0;
+    right:0;
+    top:0;
+}
+html:after{
+    width:30px;
+    top:0;
+    right:0;
+    bottom:0;
+}
+body:before{
+    height:30px;
+    right:0;
+    bottom:0;
+    left:0;
+}
+body:after{
+    width:30px;
+    top:0;
+    bottom:0;
+    left:0;
+}
+body {
+  font-family: 'Lato', sans-serif;
+ }
+.main {
+	width: 100%;
+	max-width: 960px;
+	margin: 0 auto;
+	padding-top: 100px;
+}
+.human-form {
+	width: 100%;
+	max-width: 500px;
+}
+.human-form-group {
+	padding: 10px 0;
+}
+.human-form-label {
+	width: 100%;
+	max-width: 100px;
+	color: #4b4b4b;
+}
+.human-form-input {
+	width: 100%;
+	max-width: 500px;
+	height: 20px;
+	padding: 10px 0 10px;
+	border: none;
+	border-bottom: 1px solid #4b4b4b;
+	transition: all 0.3s ease;
+}
+.human-form-input:focus{
+	outline: none;
+	border-bottom: 1px solid #3c8fc9;
+}
+input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
+	background-color: none !important;
+}
+.human-form-input-error {
+	border-bottom: 1px solid orange;
+}
+.human-form-input-error::-webkit-input-placeholder {
+	color: orange;
+}
+.human-return {
+	margin-top: 10px;
+	display: block;
+}
+.input-text {
+
+}
+.input-email {
+
+}
+.input-textarea {
+	
+}
+.input-submit {
+	padding: 10px 20px;
+	border: 4px solid #3c8fc9;
+	border-radius:25px;
+	background: none;
+	color: #3c8fc9;
+	font-size: 0.8em;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-weight: 700;
+	cursor: pointer;
+	transition: all 0.3s ease;
+	display: inline-block;
+	position: relative;
+	z-index:10;
+}
+.input-submit:hover{
+	background: #3c8fc9;
+	color: #fff;
+}
+.input-submit:focus {
+	outline: none;
+}
+[placeholder]:focus::-webkit-input-placeholder {  
+ 	transition: all 0.3s ease;
+ 	color: #3c8fc9;
+}
+.hidden {
+	display: none;
+	visibility: hidden;
+}
+
+
+/* Querys */
+@media screen and (max-width: 600px) {
+ html:before,html:after,body:before,body:after {
+ 	height: 0;
+ 	background: none;
+ }
+ .main {
+ 	padding-top: 10px;
+ }
+
+}
