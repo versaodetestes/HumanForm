@@ -41,9 +41,9 @@ $(function() {
       $( "#button" ).addClass( "validate", 450, callback );
     }, 2250 );
   }
-    function callback() {
-      setTimeout(function() {
-        $( "#button" ).removeClass( "validate" );
-      }, 1250 );
-    }
-  });
+  function callback() {
+    setTimeout(function() {
+      $( "#button" ).removeClass( "validate" );
+    }, 1250 );
+  }
+});
